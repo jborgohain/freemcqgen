@@ -49,8 +49,8 @@ button {
     flex-direction: column;
     align-items: flex-start;
     padding: 50px;
-    width: 1280px;
-    height: 720px;
+    width: 1180px;
+    height: 620px;
     background-color: #fff;
     font-size: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
