@@ -50,8 +50,7 @@ async function downloadAsPicture(content) {
         link.click();
     } catch (error) {
         console.error("Error creating image:", error);
-    } 
-    // finally {
-    //     document.body.removeChild(mcqContainer);
-    // }
+    } finally {
+        document.body.removeChild(mcqContainer);
+    }
 }
