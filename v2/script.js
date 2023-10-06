@@ -36,6 +36,9 @@ function generateMCQ(question, options) {
 async function downloadAsPicture(content) {
     const mcqContainer = document.createElement("div");
     mcqContainer.innerHTML = content;
+    mcqContainer.style.width = "1280px"; // Set the width to 1280 pixels
+    mcqContainer.style.height = "720px"; // Set the height to 720 pixels
+
 
     document.body.appendChild(mcqContainer);
 
@@ -47,7 +50,8 @@ async function downloadAsPicture(content) {
         link.click();
     } catch (error) {
         console.error("Error creating image:", error);
-    } finally {
-        document.body.removeChild(mcqContainer);
-    }
+    } 
+    // finally {
+    //     document.body.removeChild(mcqContainer);
+    // }
 }
